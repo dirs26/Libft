@@ -6,13 +6,13 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 13:24:42 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/09/23 14:23:33 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/09/24 14:17:12 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int    ft_isalpha(int c)
-{
-    return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
-}
+#include "libft.h"
 
+int	ft_isalpha(int c)
+{
+	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
+}

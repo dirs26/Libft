@@ -6,14 +6,20 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 14:38:00 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/09/23 18:51:46 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/09/24 14:38:45 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str) {
-    int i = 0;
-    while (str[i] != '\0') {
-        i++;
-    }
-    return i;
+#include "libft.h"
+
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

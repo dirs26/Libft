@@ -6,12 +6,13 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 14:25:57 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/09/23 14:38:39 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/09/24 14:18:19 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-
-int ft_isdigit(int c) {
-    return (c >= 48 && c <= 57);
+int	ft_isdigit(int c)
+{
+	return (c >= 48 && c <= 57);
 }

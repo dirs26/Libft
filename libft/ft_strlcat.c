@@ -6,12 +6,13 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 14:37:40 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/09/23 14:38:36 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/09/24 14:21:36 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-
-int ft_strlcat {
-    
+int	ft_strlcat
+{
+	
 }
