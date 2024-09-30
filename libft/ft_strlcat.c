@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_strlcat
+int	ft_strlcat ()
 {
 	
 }
