@@ -6,7 +6,22 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:27:52 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/09/30 16:28:42 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:45:36 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int ft_strchr(const char *str, int c)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] == c)
+		{
+			return (1);
+		}
+		i++;
+	}
+	return (0);
+}
