@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 14:37:40 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/09 14:16:19 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/10 17:35:14 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,31 +37,9 @@ unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize)
     return (dst_len + src_len);
 }
 
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-int	ft_memcpy(void *dst, const void *src, unsigned int n)
-{
-	unsigned char	*str1;
-	unsigned char	*str2;
-	unsigned int	i;
-
-	str1 = (unsigned char *)dst;
-	str2 = (unsigned char *)src;
-	i = 0;
-	while (i < n)
-	{
-		str1[i] = str2[i];
-		i++;
-	}
-	return (0);
+int main() {
+  char dest[50];
+  char src[50] = "Hello World!";
+  printf("%d\n", ft_strlcat(dest, src, 50));
+  return 0;
 }
