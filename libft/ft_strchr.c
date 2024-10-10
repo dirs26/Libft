@@ -6,9 +6,11 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:27:52 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/09 14:45:36 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:06:35 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_strchr(const char *str, int c)
 {

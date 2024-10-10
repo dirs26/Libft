@@ -1,6 +1,6 @@
 #ifndef LIBFT_H
 # define LIBFT_H
-int	atoi(const char *str);
+int	ft_atoi(const char *str);
 int	ft_memset(void *b, int c, unsigned int len);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
@@ -11,4 +11,15 @@ int	ft_isdigit(int c);
 int	ft_isprint(int c);
 int	ft_strcpy(char *dest, const char *src);
 int	ft_strlen(char *str);
+int	ft_strncmp(const char *str1, const char *str2, unsigned int n);
+int	ft_strchr(const char *str, int c);
+int	ft_strrchr(const char *str, int c);
+int	ft_memchr(const void *s, int c, unsigned int n);
+int	ft_memcpy(void *dst, const void *src, unsigned int n);
+unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize);
+int	ft_memcmp(const void *s1, const void *s2, unsigned int n);
+int	ft_strlcpy(char *dst, const char *src, unsigned int dstsize);
+int	ft_strnstr(const char *haystack, const char *needle, unsigned int len);
+void	ft_bzero (void *s, int n);
+unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize);
 #endif // LIBFT_H

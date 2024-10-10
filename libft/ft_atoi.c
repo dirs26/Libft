@@ -6,14 +6,14 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:28:31 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/02 14:59:47 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:08:57 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
 
-int atoi(const char* str) {
+int ft_atoi(const char* str) {
   int	num;
 
   num = 0;

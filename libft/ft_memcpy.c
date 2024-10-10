@@ -6,9 +6,11 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:23:46 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/02 15:57:37 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:06:53 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_memcpy(void *dst, const void *src, unsigned int n)
 {
