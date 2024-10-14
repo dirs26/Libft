@@ -33,4 +33,8 @@ int	ft_memcmp(const void *s1, const void *s2, unsigned int n);
 int	ft_strnstr(const char *haystack, const char *needle, unsigned int len);
 void	ft_bzero (void *s, int n);
 unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+int	ft_putbnr_fd(int n, int fd);
 #endif // LIBFT_H

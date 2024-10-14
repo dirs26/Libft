@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 int	ft_isalnum(int c)
 {
@@ -19,14 +19,14 @@ int	ft_isalnum(int c)
 		|| (c >= 48 && c <= 57));
 }
 
-int main() {
-  printf("%d\n", ft_isalnum('a'));
-  printf("%d\n", ft_isalnum('A'));
-  printf("%d\n", ft_isalnum('z'));
-  printf("%d\n", ft_isalnum('Z'));
-  printf("%d\n", ft_isalnum('0'));
-  printf("%d\n", ft_isalnum('9'));
-  printf("%d\n", ft_isalnum(' '));
-  printf("%d\n", ft_isalnum('!'));
-  return 0;
-}
+// int main() {
+//   printf("%d\n", ft_isalnum('a'));
+//   printf("%d\n", ft_isalnum('A'));
+//   printf("%d\n", ft_isalnum('z'));
+//   printf("%d\n", ft_isalnum('Z'));
+//   printf("%d\n", ft_isalnum('0'));
+//   printf("%d\n", ft_isalnum('9'));
+//   printf("%d\n", ft_isalnum(' '));
+//   printf("%d\n", ft_isalnum('!'));
+//   return 0;
+// }

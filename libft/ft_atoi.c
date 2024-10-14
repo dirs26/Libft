@@ -12,14 +12,13 @@
 
 #include "libft.h"
 //#include <stdio.h>
-
-int ft_atoi(const char* str) {
+int	ft_atoi(const char* str) {
   int	num;
+  char	digit;
 
   num = 0;
-  char digit;
-  while ((digit *= *str++) != '\0') {
-    if (digit < '0' || digit > '9') {
+  while ((digit = *str++) != '\0') {
+    if (digit < 48 || digit > 57) {
       return num;
     }
     num *= 10;
@@ -27,3 +26,9 @@ int ft_atoi(const char* str) {
   }
   return num;
 }
+// int main() {
+//     const char* str1 = "12a34";
+//     int num1 = ft_atoi(str1);
+//     printf("The integer value of '%s' is: %d\n", str1, num1);
+//     return 0;
+// }
