@@ -6,14 +6,14 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:20:19 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/01 16:14:47 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/10 16:57:06 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 //#include <string.h>
-int	ft_memset(void *b, int c, unsigned int len)
+
+void	*ft_memset(void *b, int c, unsigned int len)
 // void *b es un puntero que tiene que ser rellenado con el valor de c
 {
 	unsigned char *st;

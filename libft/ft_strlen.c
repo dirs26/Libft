@@ -11,15 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
-int	ft_strlen(char *str)
+unsigned int	ft_strlen(char *str)
 {
-	int	i;
+	unsigned int	len;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
 }
+
+// int main() {
+//   printf("%d\n", ft_strlen("Hello, World!"));
+//}

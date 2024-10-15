@@ -6,9 +6,12 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:27:19 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/01 14:38:33 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:05:36 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+// #include <stdio.h>
 
 int	ft_toupper(int c)
 {
@@ -16,3 +19,8 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+
+// int main() {
+//   printf("%c\n", ft_tolower('A'));
+//   return 0;
+// }

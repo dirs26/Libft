@@ -11,8 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
+
+// int main() {
+//   printf("%d\n", ft_isascii('z'));
+//   printf("%d\n", ft_isascii('Z'));
+//   printf("%d\n", ft_isascii('9'));
+//   printf("%d\n", ft_isascii(' '));
+//   printf("%d\n", ft_isascii('!'));
+//   return 0;
+// }

@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_putbnrfd.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 16:30:55 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/09 14:45:47 by diegrod2         ###   ########.fr       */
+/*   Created: 2024/10/14 18:42:38 by diegrod2          #+#    #+#             */
+/*   Updated: 2024/10/14 18:42:38 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_memchr(const void *s, int c, unsigned int n)
+int ft_putbnr_fd(int n, int fd)
 {
-	unsigned char *ptr;
+	int	ret;
 
-	ptr = (unsigned char *)s;
-	while (n--)
+	ret = 0;
+	if (n < 0)
 	{
-		if (*ptr == (unsigned char)c)
-			return (ptr);
-		ptr++;
+		ret += write(fd, "-", 1);
+		n = -n;
 	}
-	return (0);
+	if (n > 9)
+		ret += ft_putbnrfd(n / 10, fd);
+	ret += write(fd, &"0123456789"[n % 10], 1);
+	return (ret);
 }

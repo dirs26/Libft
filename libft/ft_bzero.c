@@ -25,3 +25,11 @@ void	ft_bzero (void *s, int n)
 	}
 	return (0);
 }
+
+// int main (void) {
+// 	char str[50];
+// 	str[50] = "Hello World!";
+// 	ft_bzero(str, 3);
+// 	write(1, str, strlen(str));
+// 	return (0);
+// }

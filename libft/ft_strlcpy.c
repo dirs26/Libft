@@ -6,13 +6,14 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 14:37:48 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/09/30 16:19:28 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/10 17:23:17 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
-int	ft_strcpy(char *dest, const char *src)
+unsigned int	ft_strlcpy(char *dest, const char *src)
 {
 	int	i;
 
@@ -22,6 +23,14 @@ int	ft_strcpy(char *dest, const char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (i);
+	return (i + 1);
 }
+/*
+int main() {
+  char dest[50];
+  char src[50] = "Hello World!";
+  printf("%d\n", ft_strlcpy(dest, src));
+  printf("%s\n", dest);
+  return 0;
+}
+*/

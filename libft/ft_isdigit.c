@@ -11,8 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 int	ft_isdigit(int c)
 {
 	return (c >= 48 && c <= 57);
 }
+
+// int main() {
+//   printf("%d\n", ft_isdigit('a'));
+//   printf("%d\n", ft_isdigit('A'));
+//   printf("%d\n", ft_isdigit('9'));
+// }
