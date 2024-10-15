@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putbnrfd.c                                      :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 18:42:38 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/14 18:42:38 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/15 17:11:16 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_putbnr_fd(int n, int fd)
+void ft_putbnr_fd(int n, int fd)
 {
-	int	ret;
-
-	ret = 0;
 	if (n < 0)
 	{
-		ret += write(fd, "-", 1);
+		ft_putchar_fd('-', fd);
 		n = -n;
 	}
 	if (n > 9)
-		ret += ft_putbnrfd(n / 10, fd);
-	ret += write(fd, &"0123456789"[n % 10], 1);
-	return (ret);
+	{
+		ft_putbnr_fd(n / 10, fd);
+		ft_putbnr_fd(n % 10, fd);
+	}
+	else
+		ft_putchar_fd(n + '0', fd);
 }
