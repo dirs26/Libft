@@ -22,7 +22,7 @@ int	ft_isalpha(int c);
 int	ft_isascii(int c);
 int	ft_isdigit(int c);
 int	ft_isprint(int c);
-void	*ft_memset(void *b, int c, unsigned int len);
+void	*ft_memset(void *s, int c, size_t len);
 size_t	ft_strlcpy(char *dest, const char *src);
 size_t	ft_strlen(char *str);
 int	ft_strncmp(const char *str1, const char *str2, unsigned int n);
