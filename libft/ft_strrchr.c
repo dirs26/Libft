@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
-	char	*lastap
+	char	*lastap;
 
 	i = 0;
 	lastap = NULL;
