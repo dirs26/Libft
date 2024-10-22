@@ -37,9 +37,9 @@ unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize)
     return (dst_len + src_len);
 }
 
-int main() {
-  char dest[50];
-  char src[50] = "Hello World!";
-  printf("%d\n", ft_strlcat(dest, src, 50));
-  return 0;
-}
+// int main() {
+//   char dest[50];
+//   char src[50] = "Hello World!";
+//   printf("%d\n", ft_strlcat(dest, src, 50));
+//   return 0;
+// }

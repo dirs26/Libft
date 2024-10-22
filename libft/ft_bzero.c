@@ -16,14 +16,13 @@ void	ft_bzero (void *s, int n)
 {
 	int	i;
 	char	*ptr;
-	*ptr = (char *)s;
+	ptr = (char *)s;
 	i = 0;
 	while (i < n)
 	{
 		ptr[i] = 0;
 		i++;
 	}
-	return (0);
 }
 
 // int main (void) {
