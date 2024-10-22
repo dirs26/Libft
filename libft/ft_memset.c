@@ -11,22 +11,23 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 //#include <string.h>
 
-void	*ft_memset(void *b, int c, unsigned int len)
-// void *b es un puntero que tiene que ser rellenado con el valor de c
+void	*ft_memset(void *s, int c, size_t len)
+// void *s es un puntero que tiene que ser rellenado con el valor de c
 {
 	unsigned char *st;
-	unsigned int i;
+	size_t i;
 
-	st = (unsigned char *)b;
+	st = (unsigned char *)s;
 	i = 0;
 	while (i < len)
 	{
 		st[i] = (unsigned char)c;
 		i++;
 	}
-	return (0);
+	return (s);
 }
 
 /*

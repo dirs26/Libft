@@ -18,11 +18,13 @@ char	*ft_strdup(const char *s)
 	char	*str;
 	size_t	len;
 
-	if (!str)
-		return (NULL);
+
+	
 	len = (ft_strlen(s)+1);
 	str = (char *)malloc(len);
-	ft_strlcpy(str, s);
+	if (!str)
+		return (NULL);
+	ft_strlcpy(str, s, len);
 	return (str);
 }
 

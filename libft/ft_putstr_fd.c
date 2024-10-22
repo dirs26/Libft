@@ -11,13 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-char *ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	int	ret;
+	int i;
 
-	ret = 0;
-	while (*s)
-		ret += write(fd, s++, 1);
-	return (ret);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 }
