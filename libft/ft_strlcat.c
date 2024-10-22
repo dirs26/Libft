@@ -17,8 +17,8 @@ unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize)
     unsigned int    src_len;
     unsigned int    dst_len;
     
-    src_len = ft_strlen(src);
-    dst_len = ft_strlen(dst);
+    src_len = ft_strlen((char *)src);
+    dst_len = ft_strlen((char *)dst);
     
     if (dst_len >= dstsize)
         dst_len = dstsize;
