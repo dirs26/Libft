@@ -15,22 +15,19 @@
 char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
+	char	*lastap
 
 	i = 0;
+	lastap = NULL;
 	while (str[i] != '\0')
 	{
+		if (str[i] == (unsigned char)c)
+			lastap = (char *) &str[i];
 		i++;
 	}
-	i += 1;
-	while (i != 0)
-	{
-		if (str[i] == c)
-		{
-			return ((char *)&str[i]);
-		}
-		i--;
-	}
-	return (0);
+	if ((unsigned char)c == '\0')
+		return ((char *)&str[i]);
+	return (lastap);
 }
 
 /*
