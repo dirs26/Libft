@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 13:53:17 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/21 13:53:17 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,4 +94,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (place_res(s, c, res));
 }
-

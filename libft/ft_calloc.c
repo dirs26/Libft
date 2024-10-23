@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:11:56 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/16 11:11:56 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*ptr;
+	void *ptr;
 
 	ptr = malloc(count * size);
 	if (!ptr)

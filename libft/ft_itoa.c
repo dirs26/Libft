@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 04:28:36 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/23 04:28:36 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ static int	ft_counter(int n)
 
 char	*ft_itoa(int n)
 {
-	size_t	sz;
-	char	*str;
-	long	nbr;
+	size_t sz;
+	char *str;
+	long nbr;
 
 	nbr = n;
 	sz = ft_counter(n);

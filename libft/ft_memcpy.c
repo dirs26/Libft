@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:23:46 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/10 15:06:53 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*d;
-	const unsigned char	*s;
-	size_t	i;
+	unsigned char *d;
+	const unsigned char *s;
+	size_t i;
 
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;

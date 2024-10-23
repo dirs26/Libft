@@ -6,24 +6,19 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 14:38:00 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/09/24 14:38:45 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
-//#include <stdio.h>
 
 size_t	ft_strlen(const char *str)
 {
-	size_t	len;
+	size_t len;
 
 	len = 0;
 	while (str[len] != '\0')
 		len++;
 	return (len);
 }
-
-// int main() {
-//   printf("%d\n", ft_strlen("Hello, World!"));
-//}
