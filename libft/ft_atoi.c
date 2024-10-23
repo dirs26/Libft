@@ -6,15 +6,15 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:28:31 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:46:27 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(const char *nptr)
 {
-	int i;
-	int result;
-	int sign;
+	int	i;
+	int	result;
+	int	sign;
 
 	i = 0;
 	result = 0;

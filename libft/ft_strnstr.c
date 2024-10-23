@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:30:47 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/23 19:33:05 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 20:20:58 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 char	*strnstr(char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t x;
+	size_t	i;
+	size_t	x;
 
 	i = 0;
 	if (little[0] == '\0')

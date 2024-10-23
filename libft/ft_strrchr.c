@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:28:37 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 20:21:14 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int i;
-	char *lastap;
+	int		i;
+	char	*lastap;
 
 	i = 0;
 	lastap = NULL;

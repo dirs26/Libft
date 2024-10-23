@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:30:56 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 20:21:45 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t i;
-	size_t size;
-	char *str;
+	size_t	i;
+	size_t	size;
+	char	*str;
 
 	size = ft_strlen(s);
 	if (start >= size)

@@ -6,7 +6,7 @@
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:30:55 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/23 19:33:48 by diegrod2         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:51:38 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
-	const unsigned char *str;
+	size_t				i;
+	const unsigned char	*str;
 
 	i = 0;
 	str = (unsigned char *)s;
