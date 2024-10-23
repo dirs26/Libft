@@ -28,7 +28,7 @@ size_t	ft_strlen(char *str);
 int	ft_strncmp(const char *str1, const char *str2, unsigned int n);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
-void	*ft_memchr(const void *s, int c, unsigned int n);
+void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize);
 int	ft_memcmp(const void *s1, const void *s2, unsigned int n);
