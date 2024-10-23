@@ -11,13 +11,14 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-static void	freemem(char **res, int wrds)
+static void	free_res(char **res, int words)
 {
 	int	i;
 
 	i = 0;
-	while (i < wrds)
+	while (i < words)
 	{
 		free(res[i]);
 		i++;
@@ -25,7 +26,7 @@ static void	freemem(char **res, int wrds)
 	free(res);
 }
 
-static int	cntwrd(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	i;
 	int	wrd;
@@ -55,7 +56,7 @@ static char	**place_res(char const *s, char c, char **res)
 {
 	int	i;
 	int	j;
-	int	aux;
+	int	count;
 
 	i = 0;
 	j = 0;
@@ -65,16 +66,16 @@ static char	**place_res(char const *s, char c, char **res)
 			i++;
 		else
 		{
-			aux = wdlen(&s[i], c);
-			res[j] = (char *)malloc((aux + 1) * sizeof(char));
+			count = wrdlen(&s[i], c);
+			res[j] = (char *)malloc((count + 1) * sizeof(char));
 			if (!res[j])
 			{
 				return (freemem(res, j), NULL);
 			}
-			aux = 0;
+			count = 0;
 			while (s[i] && s[i] != c)
-				res[j][aux++] = s[i++];
-			res[j++][aux] = '\0';
+				res[j][count++] = s[i++];
+			res[j++][count] = '\0';
 		}
 	}
 	return (res[j] = NULL, res);
@@ -87,7 +88,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	wrd = cntwrd(s, c);
+	wrd = count_words(s, c);
 	res = (char **)malloc((wrd + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
