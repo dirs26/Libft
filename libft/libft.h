@@ -42,6 +42,5 @@ void	ft_putbnr_fd(int n, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	**ft_split(char const *s, char c);
 void	*ft_calloc(size_t count, size_t size);
-//char	*ft_strdup(const char *s);
 
 #endif // LIBFT_H
