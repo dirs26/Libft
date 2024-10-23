@@ -70,7 +70,7 @@ static char	**place_res(char const *s, char c, char **res)
 			res[j] = (char *)malloc((count + 1) * sizeof(char));
 			if (!res[j])
 			{
-				return (freemem(res, j), NULL);
+				return (free_res(res, j), NULL);
 			}
 			count = 0;
 			while (s[i] && s[i] != c)
