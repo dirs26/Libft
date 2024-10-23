@@ -17,25 +17,24 @@
 char *strnstr (char *big, const char *little, unsigned int len) 
 {
 	size_t	i;
-	size_t	j;
+	size_t	x;
 
 	i = 0;
 	if (little[0] == '\0')
 		return ((char *)big);
 	while (big[i] != '\0' && i < len)
 	{
-		j = 0;
-		while (big[i + j] == little[j] && (i + j) < len)
+		x = 0;
+		while (big[i + x] == little[x] && (i + x) < len)
 		{
-		if (little[j + 1] == '\0')
+		if (little[x + 1] == '\0')
 				return ((char *)&big[i]);
-			j++;
+			x++;
 		}
 		i++;
 	}
 	return (NULL);
 }
-
 // int main(void)
 // {
 // 	char *big = "Hello World!";
