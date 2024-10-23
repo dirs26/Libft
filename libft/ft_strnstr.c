@@ -14,7 +14,7 @@
 #include <stdlib.h>
 // #include <stdio.h>
 
-char *strnstr (char *big, const char *little, unsigned int len) 
+char	*strnstr (char *big, const char *little, size_t len) 
 {
 	size_t	i;
 	size_t	x;

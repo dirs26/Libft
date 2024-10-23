@@ -40,7 +40,7 @@ unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 int	ft_strncmp(const char *str1, const char *str2, unsigned int n);
-int	ft_strnstr(const char *haystack, const char *needle, unsigned int len);
+char	*strnstr (char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *str, int c);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strtrim(char const *s1, char const *set);
