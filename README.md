@@ -1,1 +1,1 @@
-Library created with C
+*Library created with C*
